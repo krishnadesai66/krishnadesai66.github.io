@@ -12,8 +12,45 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+
+  /*animation keyframes*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
   
+  .animation{
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+     -ms-animation: fadeIn 4s;
+  }
   
+ 
+
   #navbar {
     overflow: hidden;
     background-color:white;
@@ -39,13 +76,3 @@ body {
     color: white;
   }
 
-  .site{
-    margin: 20px;
-    padding: 20px;
-    background: orange;
-    line-height: 18px;
-    height: 18px;
-    font-size: 18px;
-    font-family:Quicksand; 
-    
-  }

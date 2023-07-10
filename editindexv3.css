@@ -2,17 +2,20 @@ html, body {
   background-image: url("cov4.png");  height: 100%;
   text-align: center;
   font-family: Quicksand;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
-.svg-wrapper {
-    height: 60px;
-  margin: 0 auto;
-  position: relative;
-  top: 30%;
-transform: translateY(-50%);
-  width: 390px;
 
+
+
+
+.svg-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
  
 }
 
@@ -34,7 +37,41 @@ transform: translateY(-50%);
   top: -50px;
 }
 
+/*animation keyframes*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.animation{
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+   -ms-animation: fadeIn 6s;
+}
 
 
 @keyframes draw {
@@ -54,8 +91,6 @@ transform: translateY(-50%);
   -webkit-animation: 0.7s draw linear forwards;
   animation: 0.7s draw linear forwards;
 }
-  
-
   
   
   

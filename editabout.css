@@ -1,35 +1,123 @@
-html, body {
-  background: linear-gradient(to right, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
-  height: 100%;
+
+
+html,body {
+    background: linear-gradient(270deg, #707574, #bcc0bf, #d3d8d7);
+    background-size: 600% 600%;
+    animation: AnimationName 13s ease infinite;
+    height: 100%;
+    text-align: center;
+    font-family: Quicksand;
+  
+}
+
+
+h1{
+  font-family: "Quicksand";
+  font-size: 40px;
   text-align: center;
-  font-family: Quicksand;
-
   
-  }
-  
- title{
-     color: black;
-     top: 40px;
-     text-align: center;
-     text-decoration: underline black;
-     transition-property: width;
+}
 
- }
+
+
+/*icon gallery*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 160px;
+  float: center; 
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/*animation keyframes*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+
+.title{
+  animation: fadeIn 5s;
+ -webkit-animation: fadeIn 5s;
+ -moz-animation: fadeIn 5s;
+ -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+
+
+ .face{
+  color: black;
+  top: 40px;
+  text-align: center;
+  text-decoration: underline black;
+  transition-property: width;
+
+}
+
+.animation{
+  animation: fadeIn 4s;
+  -webkit-animation: fadeIn 4s;
+  -moz-animation: fadeIn 4s;
+  -o-animation: fadeIn 4s;
+   -ms-animation: fadeIn 4s;
+}
 
  .summary{
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     padding-right: 180px;
     padding-left: 180px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-top: 20px;
 
 }
 
+
+
+
 .summary2{
 
  font-size: 20px;
- text-align: justify;
+ text-align: center;
  padding-right: 180px;
  padding-left: 180px;
  padding-bottom: 40px;
@@ -39,52 +127,27 @@ html, body {
 
 
 
-.html{
-  text-align: center;
-  font-size: 20px;
-}
-
-.java{
-    text-align: center;
-    font-size: 20px;
-}
-
-.pyth{
-    text-align: center;
-    font-size: 20px;
-    
-}
 
 
-.c{
-    text-align: center;
-    font-size: 20px;
-    
-}
-
-
-.pyth{
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 40px;
-
-}
 
 .summary3{
-    font-size: 20px;
-    text-align: justify;
-    padding-right: 180px;
-    padding-left: 180px;
-    padding-bottom: 40px;
+    
+ font-size: 20px;
+ text-align: center;
+ padding-right: 180px;
+ padding-left: 180px;
+ padding-bottom: 40px;
+
+   
 
 }
 
 
     
- .face{
+.face{
     text-align: center;
     
-   }
+}
 
 .icons{
   display: inline-block;
@@ -93,25 +156,25 @@ html, body {
 }
    
 
-    .header {
-      overflow: hidden;
-      padding: 20px 19px;
+.header {
+  overflow: hidden;
+  padding: 20px 19px;
 
-    }
+  }
     
-    /* Style the header links */
-    .header a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 4px;
-      font-family: Quicksand;
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: Quicksand;
   
-    }
+  }
     
     /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
     .header a.logo {
@@ -135,7 +198,7 @@ html, body {
       float: right;
     }
     
-    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    /* Responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
     @media screen and (max-width: 500px) {
       .header a {
         float: none;
@@ -146,3 +209,7 @@ html, body {
         float: none;
       }
     }
+
+
+
+    
