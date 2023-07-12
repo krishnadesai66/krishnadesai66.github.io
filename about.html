@@ -17,7 +17,10 @@
 
 <link rel="stylesheet" type="text/css" href="editabout.css">
 
-
+<!--react -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 <link rel="icon" 
       type="image/png" 
@@ -30,8 +33,7 @@
 
   <body>
 
-
-
+    
     <div class="header animation">
       <a href="index.html" class="logo">KD</a>
       <div class="header-right">
@@ -51,107 +53,113 @@
      
    
 
-  
 
 
      
-     <div class = "face animation">
-        <img src = "aboutpic.png" height = "340px" width = "340px"> 
-     </div>
+    <div class = "face animation">
+      <img src = "aboutpic.png" height = "340px" width = "340px"> 
+   </div>
 
-     <div class = "summary animation">
-        <p>Hi there! I’m Krishna and I’m a current computer science student at Rutgers University - New Brunswick. I began my 
-        exploration into tech when I coded my first website to display my photography portfolio back in high school; my
-         passion for coding and computer science grew from there! As a a New Jersey native, I decided to pursue my interest in 
-         computer science by attending Rutgers University, where I have been able to learn a vast amount about applications of 
-         programming. Now, I’m currently interning at a tech defense company and am expanding my knowledge regarding data science in my free time.</p>
-    </div>
-
-    <div class = "summary2 animation">
-        <p>Throughout my academic career at Rutgers, I've been seeking opportunities to expand my programming skills. 
-        Through my Intro. to CS and Data Structures courses, I was able to develop a clear understanding of Java.
-        I am also capable of programming in C and Python, the latter of which I hope to further expand upon through future 
-        courses and projects. I am learning SQL and sharpening my Python skills. Check out my projects tab to see the skills I've been implementing!
-         While I’m always trying to sharpen my skill set, I have gained proficiency in the following areas: </p>
-       
-     </div>
-
-   
-
-
-
-    <div class="gallery animation">
-      <a target="_blank" href="html.png">
-        <img src="html.png" alt="html" width="600" height="400">
-      </a>
-    </div>
-     
-    <div class="gallery animation">
-      <a target="_blank" href="css-3.png">
-        <img src="css-3.png" alt="css" width="600" height="400">
-      </a>
-    </div>
+  <br>
+  <br>
     
-    <div class="gallery animation">
-      <a target="_blank" href="java.png">
-        <img src="java.png" alt="java" width="600" height="400">
-      </a>
-    </div>
-
- 
-
-    <div class="gallery animation">
-      <a target="_blank" href="csharp.png">
-        <img src="csharp.png" alt="tableau" width="600" height="400">
-      </a>
-    </div>
-    
-    <br>
-
-    <div class="gallery animation">
-      <a target="_blank" href="tableau.webp">
-        <img src="tableau.webp" alt="tableau" width="600" height="400">
-      </a>
-    </div>
 
 
-    <div class="gallery animation">
-      <a target="_blank" href="python.png">
-        <img src="python.png" alt="python" width="600" height="400">
-      </a>
-    </div>
+    <div class="timeline animation">
 
-    <div class="gallery animation">
-      <a target="_blank" href="sql.png">
-        <img src="sql.png" alt="sql" width="600" height="400">
-      </a>
-    </div>
+      <div class="container left">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Summer 2018</h2>
+          <p>I began my exploration into tech when I coded my first website to display my photography portfolio in high school; my
+             passion for coding and computer science grew from here! </p>
+             <img src="html.png" alt="html" width="50" height="50">
+             <img src="css-3.png" alt="css" width="50" height="50">
 
-
-    <br>
-    <br>
-    <br>
- 
-
-
-
-
-  
-
-     <div class = "summary3 animation">
-        <p> Offline, I'm a music enthusiast (major Swiftie!), and very serious foodie. In my free time, I love to try out new recipes.
-           I am also passionate about equity in STEM education; I hope to help increase academic achievement for students in STEM throughout my career.
-           Additionally, I am a photographer! Check out my photography <a href = "https://vsco.co/krishno/gallery">portfolio</a>. 
-        </p>
-
-        <br>  
-        <br>  
-        <br>  
-        <br>  
+        </div>
       </div>
 
-     
+      <div class="container right">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Spring 2020</h2>
+          <p>I decided to pursue my interest in computer science by committing to Rutgers University, where I have been able to learn a vast amount about applications of 
+            programming</p>
+            <img src="rulogo.png" alt="css" width="50" height="50">
+
+        </div>
       </div>
+
+      <div class="container left">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Fall 2020 - Spring 2021</h2>
+          <p> Through my Intro. to CS and Data Structures courses, I was able to develop a clear understanding of Java.</p>
+            <img src="java.png" alt="java" width="50" height="50">
+        </div>
+      </div>
+
+
+      <div class="container right">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Summer 2021</h2>
+          <p>I learned Python and created a project that visualizes suicides in India to bring light to mental health.</p>
+          <img src="python.png" alt="python" width="50" height="50">
+
+          <a href = "https://github.com/krishnadesai66/Suicides-In-India">
+          <img src="githublogo.png" alt="github" width="50" height="50">
+          </a>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Fall 2021 - Spring 2022</h2>
+          <p>I learned C and some fascinating information on the rise of A.I.! Check out my favorite article that sums up one of my favorite classes I took - "Minds, Machines, and Persons." I also 
+            became a tutoring fellow to help increase STEM academic acheivement in K-12 classrooms.
+          </p>
+          <a href = "https://storiusmag.com/the-mystery-of-consciousness-ais-potential-role-in-unraveling-the-enigma-f5f56fceb7ed">
+            <img src="mediumlogo.png" alt="medium" width="50" height="50">
+            </a>
+        </div>
+      </div>
+
+
+      <div class="container right">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Summer 2022</h2>
+          <p>I learned more about DevOps and regression testing during my first internship this summer. I also travelled to Europe for the first time and discovered my favorite book - Little Women!</p>
+          <img src="typing.png" alt="github" width="70" height="70">
+          <img src="book.png" alt="medium" width="70" height="70">
+
+          
+        </div>
+      </div>
+
+
+
+      <div class="container left">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Fall 2022 - Spring 2023</h2>
+          <p>I learned SQL and built an interactive ecommerce website! I also learned Hindi, which was a big goal of mine, and travelled to Boston. </p>
+
+          <img src="sql.png" alt="sql" width="50" height="50">
+
+          <a href = "https://github.com/krishnadesai66">
+            <img src="githublogo.png" alt="github" width="50" height="50">
+            </a>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <h2 style = "font-family: Quicksand;">Summer 2023</h2>
+          <p>I learned C#, and more about complex systems and solution packages during my second software engineering internship. I also fell in love with photography and Taylor Swift all over again! More TBA!</p>
+          <img src="csharp.png" alt="github" width="50" height="50">
+          <img src="tswift.png.crdownload" alt="github" width="60" height="80">
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
 
 
 
