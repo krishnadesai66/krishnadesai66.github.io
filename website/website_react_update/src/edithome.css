@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+  background-image: url("./cov4.png"); 
+  height: 100%;
+  width: 100%;
+  font-family: Quicksand;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; 
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+
+.text{
+  width: 60%;                  
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-left: 20%;      
+  padding-top: 11.5%;        
+  font-size: 33px;
+  color: white;
+  display:inline-block;
+  max-width: 80%;
+}
+
+.subtext{
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-left: 20%;       
+  font-size: 20px;
+  color: white;
+  font-family: Quicksand;
+}
+
+/*highlight "Krishna" span class*/
+.name{
+  color: white;
+  background-color: #49243E;
+  padding: .10em 0;
+  box-shadow: .1em 0 0 #49243E, -.1em 0 0 #49243E;
+  border-radius: 0.3em;
+}
+
+
+/*loading animation*/
+
+.animation{
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+   -ms-animation: fadeIn 6s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
