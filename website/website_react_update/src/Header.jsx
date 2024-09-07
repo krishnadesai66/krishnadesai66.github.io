@@ -12,7 +12,6 @@ function Header() {
         <nav>
           <ul>
             <li>
-            
               <NavLink
                 to="/"
                 end

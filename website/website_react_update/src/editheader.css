@@ -1,28 +1,37 @@
-
 .logo {
     display: flex; 
     align-items: center; 
-    margin-right: auto; 
-    margin-left: -30px;
-    margin-top: -40px;
+    /*margin-right: auto; */
+    margin-left: -20px;
+    padding-top: -10px;
   }
   
 .image {
     width: 120px; 
     height: auto; 
+
 }
 
 
+
 header {
-    padding: 30px;
-    display: flex;
-    justify-content: flex-end;  
-    font-size: 20px;
-    animation: fadeIn 6s;
-    -webkit-animation: fadeIn 6s;
-    -moz-animation: fadeIn 6s;
-    -o-animation: fadeIn 6s;
-    -ms-animation: fadeIn 6s;
+  background: transparent;
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Space between left and right content */
+  align-items: center; /* Center items vertically */
+  position: absolute; /* Position on top of the content */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the container */
+  padding: 0 20px; /* Horizontal padding */
+  font-size: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  z-index: 10; /* Ensure header is on top of other elements */
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+  -ms-animation: fadeIn 6s;
 }
 
 nav ul {
