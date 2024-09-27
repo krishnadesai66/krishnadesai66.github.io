@@ -1,7 +1,6 @@
 .logo {
     display: flex; 
     align-items: center; 
-    /*margin-right: auto; */
     margin-left: -20px;
     padding-top: -10px;
   }
@@ -12,18 +11,16 @@
 
 }
 
-
-
 header {
   background: transparent;
-  display: flex; /* Enable flexbox layout */
-  justify-content: space-between; /* Space between left and right content */
-  align-items: center; /* Center items vertically */
-  position: absolute; /* Position on top of the content */
-  top: 0;
-  left: 0;
-  width: 100%; /* Full width of the container */
-  padding: 0 20px; /* Horizontal padding */
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  position: absolute;
+  top: -25px;
+  left: -16px;
+  width: 100%; 
+  padding: 0 20px; 
   font-size: 20px;
   box-sizing: border-box; /* Include padding in width calculation */
   z-index: 10; /* Ensure header is on top of other elements */

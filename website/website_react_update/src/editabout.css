@@ -8,16 +8,26 @@ html, body {
 }
 
 
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .about-container {
   padding-top: 30px;
   padding-bottom: 140px;
   text-align: center;
-  background-color: rgb(224, 224, 224); 
-  background: linear-gradient(-250deg, rgba(224,224,224,1) 20%, rgba(123,123,123,1) 65%, rgba(153,153,153,1) 100%);
-  background-size: cover;
-  animation: gradient 15s ease infinite;
+  background-color: rgb(224, 224, 224);
+  background: linear-gradient(-250deg, rgba(224, 224, 224, 1) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
+  background-size: 200% 200%; /* Allows for smooth movement */
+  animation: backgroundMove 15s ease infinite; /* Animates the background movement */
   min-height: 100vh;
 }
+
 
 
 .skills{
@@ -38,7 +48,10 @@ html, body {
 .about-text{
   font-family: "Quicksand";
   font-size: 20px;
-  text-align: center;
+}
+
+.body-text{
+  text-align: left;
 }
 
 .headshot{
@@ -60,9 +73,7 @@ html, body {
   .gradient {
     --size: 500px;
   }
-
 }
-
 
 @keyframes fadeIn {
   0% { opacity: 0; }

@@ -18,7 +18,7 @@ function About(){
                                 passion for coding and computer science grew from here! I decided to pursue my interest in computer science and enroll at Rutgers University.
                                 I recently graduated in May 2024 with my Bachelor of Science in Computer Science and began working full time as a software engineer.
                                 </p>
-                                <p>Over the past few years, I've garnered several skills. Here's a breakdown:</p> 
+                                <p>Over the past few years, I've garnered several skills. Here's a breakdown, but I'm always learning more:</p> 
                                 <div className = "skills">
                                     <ul>
                                         <li>HTML, CSS</li>
