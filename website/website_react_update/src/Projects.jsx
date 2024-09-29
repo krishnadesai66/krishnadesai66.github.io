@@ -1,70 +1,54 @@
 import React from 'react';
-import './editprojects.css'; // Import your CSS file'
+import './editprojects.css'; // Import your CSS file
 
-
-function Projects() {
-
-    const restaurant = [
-      {
-        name: 'Fat Cactus',
-        cuisine: 'Mexican',
-        area: 'NJ',
-        image: "./src/components/fatcactus.jpg",
-        link:"https://www.fatcactuscantina.com/"
-      },
-      {
-        name: 'Karma Kafe',
-        cuisine: 'Indian',
-        area: 'NJ',
-        image: "./src/components/karmakafe.jpg",
-        link:"http://www.karmakafe.com/"
-      },
-      {
-        name: 'Sakana',
-        cuisine: 'Japanese',
-        area: 'NJ',
-        image: "./src/components/sakana.jpg",
-        link:"https://www.sakananewbrunswick.com/"
-      }, 
-      {
-        name: 'Uva',
-        cuisine: 'Italian',
-        area: 'NYC',
-        image: "./src/components/uva.jpg",
-        link:"https://www.uvanyc.com/"
-      },
-      {
-        name: 'Tacoria',
-        cuisine: 'Mexican',
-        area: 'NJ',
-        image: "./src/components/tacoria.jpg",
-        link:"https://tacoria.com/"
-      }
-  
-    ]
-  
-    return (
-      <>
-      <div className='header'>
-        <h1>NYC/NJ Food Favorites!</h1>
-        <h2>Here are my food favorites in the NYC/NJ area...</h2>
-      </div>
-  
-        {
-          restaurant.map((restaurant, i) => {
-            return (<Post 
-              name={restaurant.name} 
-              key={i}
-              cuisine={restaurant.cuisine} 
-              area={restaurant.area} 
-              image = {restaurant.image}
-              link = {restaurant.link}
-              />)
-  
-          })
-        }
-  
-      </>
-    )
+const projects = [
+  {
+    title: "Housing Cost Predictor",
+    description: "A machine learning model that predicts housing prices.",
+    skills:"Skills: Python - Pandas, scki-kit learn, Matplotlib",
+    githubLink: "https://github.com/krishnadesai66/HousingCostPredictor",
+  },
+  {
+    title: "Suicides in India Visualization",
+    description: "Created data visualizations of suicide rates in India.",
+    skills:"Skills: Python - Pandas, NumPy, Seaborn, Matplotlib",
+    githubLink: "https://github.com/krishnadesai66/Suicides-In-India",
+  },
+  {
+    title: "eBay Marketplace",
+    description: "A recreation of eBay marketplace where website users can log in as users to buy/sell, customer representatives, or website administrators.",
+    skills:"Skills: Java Server Pages, Apache Tomcat, HTML, CSS, Java",
+    githubLink: "https://github.com/krishnadesai66/ebaymarketplace",
+  },
+  {
+    title: "Food Favorites Board",
+    description: "A community board of my favorite restaurants in the NYC/NJ.",
+    skills:"Skills: HTML, CSS, JavaScript, React.js",
+    githubLink: "  https://github.com/krishnadesai66/NYC-NJ-Food-Favorites-Board",
   }
+];
+
+const Projects = () => {
+  return (
+    <div className="projects-container">
+      <br></br>
+      <br></br>
+      <h2 className="projects-title">My Projects</h2> 
+      <br></br>
+      <div className="projects-board">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+            <p>{project.skills}</p>
+            <div className="project-links">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export default Projects;
