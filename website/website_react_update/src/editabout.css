@@ -52,6 +52,8 @@ html, body {
 
 .body-text{
   text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .headshot{
