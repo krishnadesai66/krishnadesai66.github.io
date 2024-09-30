@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.about-container {
+  padding-top: 30px;
+  padding-bottom: 140px;
+  text-align: center;
+  background-color: rgb(224, 224, 224);
+  background: linear-gradient(-250deg, rgb(185, 183, 183) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
+  background-size: 200% 200%;
+  animation: backgroundMove 15s ease infinite; 
+  min-height: 100vh;
+}
+
+.about-container h3{
+  font-size: 30px;
+}
+
+.skills{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: justify; 
+}
+
+
+.skills2{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: justify; 
+}
+ 
+.about-text{
+  font-family: "Quicksand";
+  font-size: 20px;
+}
+
+.body-text{
+  text-align: left;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.headshot{
+  width: 300px;
+  height: 300px;
+  padding-top: 100px;
+}
+
+.animation{
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+   -ms-animation: fadeIn 6s;
+}
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+@media screen and (max-width: 500px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+

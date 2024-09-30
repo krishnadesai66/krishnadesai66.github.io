@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Quicksand;
+}
+
+
+.home-container{
+  background-image: url("./cov4.png"); 
+  height: 100%;
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
+  font-family: Quicksand;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll; 
+  min-height: 100vh;
+  margin: 0;
+  background-attachment: fixed;
+}
+
+
+.text{
+  width: 60%;                  
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-left: 16%;      
+  padding-top: 22%;        
+  font-size: 33px;
+  color: white;
+  display:inline-block;
+  max-width: 80%;
+}
+
+.subtext{
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-left: 16%; 
+  padding-top: 5px;      
+  font-size: 20px;
+  color: white;
+  font-family: Quicksand;
+}
+
+/*highlight "Krishna" span class*/
+.name{
+  color: white;
+  background-color: #49243E;
+  padding: .10em 0;
+  box-shadow: .1em 0 0 #49243E, -.1em 0 0 #49243E;
+  border-radius: 0.3em;
+}
+
+
+/*loading animation*/
+.animation{
+  animation: fadeIn 6s;
+  -webkit-animation: fadeIn 6s;
+  -moz-animation: fadeIn 6s;
+  -o-animation: fadeIn 6s;
+   -ms-animation: fadeIn 6s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 800px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .text{
+    padding-top: 200px;
+  }
+}
+
+   
