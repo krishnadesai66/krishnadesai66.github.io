@@ -21,9 +21,9 @@ html, body {
   padding-bottom: 140px;
   text-align: center;
   background-color: rgb(224, 224, 224);
-  background: linear-gradient(-250deg, rgba(224, 224, 224, 1) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
-  background-size: 200% 200%; /* Allows for smooth movement */
-  animation: backgroundMove 15s ease infinite; /* Animates the background movement */
+  background: linear-gradient(-250deg, rgb(185, 183, 183) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
+  background-size: 200% 200%;
+  animation: backgroundMove 15s ease infinite; 
   min-height: 100vh;
 }
 
@@ -69,6 +69,23 @@ html, body {
   -moz-animation: fadeIn 6s;
   -o-animation: fadeIn 6s;
    -ms-animation: fadeIn 6s;
+}
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 

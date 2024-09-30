@@ -6,7 +6,6 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Quicksand;
-
 }
 
 
@@ -98,4 +97,23 @@ html, body {
   100% { opacity: 1; }
 }
 
+@media screen and (max-width: 800px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
 
+  .column {
+    width: 100%;
+  }
+
+  .text{
+    padding-top: 200px;
+  }
+}
+
+   

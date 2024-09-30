@@ -3,7 +3,7 @@
   -webkit-animation: fadeIn 4s;
   -moz-animation: fadeIn 4s;
   -o-animation: fadeIn 4s;
-    -ms-animation: fadeIn 4s;
+  -ms-animation: fadeIn 4s;
 }
 
 @keyframes backgroundMove {
@@ -22,15 +22,22 @@
   align-items: center;     
   height: 100vh;  
   background-color: rgb(224, 224, 224);
-  background: linear-gradient(-250deg, rgba(224, 224, 224, 1) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);          
+  background: linear-gradient(-250deg, rgb(185, 183, 183) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
+  padding-top: 80px;
+  padding-bottom:400px;
 }
 
 .projects-title {
   font-size: 30px;
   color: #333;
   margin-bottom: 20px;
+  margin: 20px 0;
+  color: black;
+  padding: 20px 0; 
+  width: 100%; 
+  text-align: center; 
 }
 
 .projects-board {
@@ -68,11 +75,21 @@
 
 .project-links {
   margin-top: 10px;
+  width: 80px; 
+  color: white;
+  padding: 1em 0;
+  background-color: #49243E;
+  box-shadow: .05em 0 0 #49243E, -.2em 0 0 #49243E;
+  border-radius: 0.5em;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  display: block;
 }
 
 .project-links a {
   margin: 0 10px;
-  color: #49243E;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -123,7 +140,7 @@
 }
 
   
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .header a {
     float: none;
     display: block;
@@ -136,6 +153,18 @@
   .column {
     width: 100%;
   }
-}
 
-   
+  .projects-container{
+    padding-bottom:600px;
+  }
+
+  .projects-board {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+  }
+
+  .project-card {
+    width: 150%; 
+  }
+}
