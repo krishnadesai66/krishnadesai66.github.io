@@ -114,6 +114,10 @@ html, body {
   .text{
     padding-top: 200px;
   }
+
+  .subtext{
+    text-align: center;
+  }
 }
 
    
