@@ -25,7 +25,7 @@
   background: linear-gradient(-250deg, rgb(185, 183, 183) 20%, rgba(123, 123, 123, 1) 65%, rgba(153, 153, 153, 1) 100%);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom:400px;
 }
 
