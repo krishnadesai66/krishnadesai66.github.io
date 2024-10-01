@@ -116,7 +116,7 @@ html, body {
   }
 
   .subtext{
-    justify-content: flex-start;
+    justify-content: left;
   }
 }
 
