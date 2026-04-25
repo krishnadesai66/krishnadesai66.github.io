@@ -1,4 +1,3 @@
-import React from 'react';
 import './editprojects.css'; // Import your CSS file
 
 const projects = [
