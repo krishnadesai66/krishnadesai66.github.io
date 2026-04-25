@@ -3,6 +3,18 @@ import './editprojects.css'; // Import your CSS file
 
 const projects = [
   {
+    title: "Stress Predictive Model",
+    description: "Python ensemble models (Random Forest, Gradient Boosting, XGBoost) to predict stress levels(low/medium/high) from health metrics, demographic features (age, gender), and activity data in an imbalanced multiclass setting",
+    skills:"Skills: PPython, scikit-learn, XGBoost, SHAP",
+    githubLink: "https://github.com/krishnadesai66/Stress_Predictive_Model",
+  },
+  {
+    title: "Stress Predictive Model",
+    description: "LLM-powered resume analyzer that parses uploaded PDFs, scores resume-to-JD fit, and returns structured rewrite suggestions via a prompt-engineered JSON pipeline",
+    skills:"Skills: Python - scikit-learn, XGBoost, SHAP",
+    githubLink: "https://github.com/krishnadesai66/JobResumeAnalyzer",
+  },
+  {
     title: "Housing Cost Predictor",
     description: "A machine learning model that predicts housing prices.",
     skills:"Skills: Python - Pandas, scki-kit learn, Matplotlib",
