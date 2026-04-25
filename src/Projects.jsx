@@ -9,7 +9,7 @@ const projects = [
     githubLink: "https://github.com/krishnadesai66/Stress_Predictive_Model",
   },
   {
-    title: "Stress Predictive Model",
+    title: "Job Resume Analyzer",
     description: "LLM-powered resume analyzer that parses uploaded PDFs, scores resume-to-JD fit, and returns structured rewrite suggestions via a prompt-engineered JSON pipeline",
     skills:"Skills: Python - scikit-learn, XGBoost, SHAP",
     githubLink: "https://github.com/krishnadesai66/JobResumeAnalyzer",
