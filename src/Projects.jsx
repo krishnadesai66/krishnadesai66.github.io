@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Stress Predictive Model",
     description: "Python ensemble models (Random Forest, Gradient Boosting, XGBoost) to predict stress levels(low/medium/high) from health metrics, demographic features (age, gender), and activity data in an imbalanced multiclass setting",
-    skills:"Skills: PPython, scikit-learn, XGBoost, SHAP",
+    skills:"Skills: Python - scikit-learn, XGBoost, SHAP",
     githubLink: "https://github.com/krishnadesai66/Stress_Predictive_Model",
   },
   {
